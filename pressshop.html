@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Levi Hirschmann 665 350 674-->
+<head>
+
+    <title>Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/maincss.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="main.html">Automobile</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="#band">Press Shop</a></li>
+                <li><a href="#tour">Body Shop</a></li>
+                <li><a href="#contact">Paint Shop</a></li>
+                <li><a href="#contact">Assembly</a></li>
+                <li><a href="#contact">Testing</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="item">
+    <img src="img/presshop.png" alt="press shop">
+    <div class="carousel-caption">
+        <h3>Press Shop</h3>
+        <p>The beginning of the manufacturing process</p>
+    </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+    <h3>The Press Shop</h3>
+    <p>It marks the beginning of the automotive production process. Here, as chassis parts are shaped from precisely cut metal blanks, while corresponding tool sets create body parts such as side frames, doors, bonnets and roofs from sheet metal of various thicknesses.
+        The basic premise behind shaping these blanks is fairly primitive in concept. Huge punch and die sets are worked relentlessly by mechanical or hydraulic power presses to form panels with unerring repetition. Press performance is the very lifeblood of any automotive plant. According to BMW, a typical chassis press has an overall pressing performance of 8,100 tonnes and processes up to 150,000kg of metal into approximately 13,000 parts per day. To keep production interruptions to a minium, tools are changed automatically in around eight minutes, though many can achieve the changeover in considerably less time.
+    </p>
+    <p> Tesla has pioneered the use of massive aluminum casting machines, also known as Giga Presses, to make large single pieces of vehicle underbodies, streamline production and reduce the work of even robots.</p>
+    <p> Automakers using aluminum casting machines claim they can reduce investments needed to build chassis - a vehicle's second most expensive component after the engine - by 40 percent, and the average cost of their parts by 30 percent.</p>
+    <br>
+    <p>Here you can take a look at a casting machine from the press shop of Tesla Berlin.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7-4yOx1CnXE?start=21&end=53;controls=0&amp;" title="Tesla Giga Press" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+
+<script>
+    $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+</script>
+
+</body>
+</html>
