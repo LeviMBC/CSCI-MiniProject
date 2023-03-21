@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Levi Hirschmann 665 350 674-->
+<head>
+
+  <title>Body Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/maincss.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">Automobile</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="pressshop.html">Press Shop</a></li>
+        <li><a href="bodyshop.html">Body Shop</a></li>
+        <li><a href="paintshop.html">Paint Shop</a></li>
+        <li><a href="#contact">Assembly</a></li>
+        <li><a href="#contact">Testing</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="item">
+  <img src="img/bodyshop.png" alt="press shop" style="max-width: 100%">
+  <div class="carousel-caption">
+    <h3>Body Shop</h3>
+    <p>Welding of the bodywork</p>
+  </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>The Body Shop</h3>
+  <p>The Body is most of what you see when you look at the vehicle. It consists of the raw metal structure that “surrounds” the passengers. It is also referred to as the “passenger safety cell.” The body parts are  welded together in separate, close-tolerance, robotic stations to produce sub-assemblies that are subsequently precision-positioned and further robotically combined, aligned, and welded into a metal “shell” that forms the basis of the automobile.
+  </p>
+  <p>Welding not only hold the components together, they also add safety and overall dimensional accuracy. This dimensional accuracy is very important. It ensures the overall fit and finish of the interior parts which will be installed in the assembly shop. Mercedes-Benz uses a flexible, non-contact measurement system that uses Laser Sensors mounted on standard industrial robots to measure important dimensional features on parts assemblies. The Perceptron System is a measurement device utilizing highly accurate laser sensors to ensure the dimensions on every body meet the standard of excellence. The Perceptron Systems are multiple laser cameras mounted on robots that measure predefined dimension critical locations through various stages of the production process, ensuring dimensional integrity for the next process. This system also provides automatic alarming capabilities and reporting to reduce process variation, and implement process improvements.
+  </p>
+  <br>
+  <p>Here you can have a look at the body shop of a modern car manufacturing plant.</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qlguwy9JMSA?start=85&end=217;controls=0" title="Body Shop" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+</script>
+
+</body>
+</html>

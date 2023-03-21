@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Levi Hirschmann 665 350 674-->
+<head>
+
+  <title>Paint Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/maincss.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 25px 0;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    th {
+      background-color: #777;
+      color: #ffffff;
+      text-align: center;
+    }
+    td{
+      padding: 12px 15px;
+    }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">Automobile</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="pressshop.html">Press Shop</a></li>
+        <li><a href="bodyshop.html">Body Shop</a></li>
+        <li><a href="paintshop.html">Paint Shop</a></li>
+        <li><a href="#contact">Assembly</a></li>
+        <li><a href="#contact">Testing</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="item">
+  <img src="img/paintshop.png" alt="press shop" style="max-width: 100%">
+  <div class="carousel-caption">
+    <h3>Paint Shop</h3>
+    <p>Painting the bodywork</p>
+  </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>The Paint Shop</h3>
+  <p>Upon arrival to the Paint Shop, vehicles body must be cleaned and conditioned to ensure the best possible paint job. Dust or any impurities can ruin a paint job. Team Members that enter the Paint Shop must wear special suits and headgear to prevent unwanted particles from entering the Paint Shop. Then while wearing the Paint Suits, team members are re-cleaned by being “blown and vacuumed” in a “Clean Room” before entering the Paint Shop. This removes any loose dust or particles that could potentially contaminate the Paint Shop.
+  </p>
+  <p>Paint is not just about color. The paint also protects the body. This means protecting it from corrosion and sealing it from the environment. The following are the primary processes of the paint shop:</p>
+  <table>
+    <tr>
+      <th>PRE-ClEAN</th>
+    </tr>
+    <tr>
+      <td>After the Body arrives from the Body Shop, it is cleaned and conditioned to ensure the best possible paint job.</td>
+    </tr>
+    <tr>
+      <th>PHOSPHATE DIP</th>
+    </tr>
+    <tr>
+      <td><p>Phosphate provides a surface to which the E-Coat can adhere to the Body. The phosphate actually grows a crystal into the first layer of metal, this effectively seals the body. Phosphate pre-treatment chemicals protect the raw metal of the body.
+          </p>
+          <p>To ensure total phosphate coverage, the body is completely immersed in an approximately 40,000 Gallon tank. There is a conveyor system that allows you to tilt and dip the entire body so you can get 100% coverage and eliminate air pockets. You can also adjust the program for the specific style of vehicle.
+          </p>
+      </td>
+    </tr>
+    <tr>
+      <th>E-COAT</th>
+    </tr>
+    <tr>
+      <td>Protects the body from rust and corrosion. New e-coat material that will provide a better corrosion protection. Electrical charges are applied. E-Coat is actually a water-based and lead free cathodic electro-coat primer applied at 315 volts and 475 amps. After the body leaves the tank, we must make sure that the E-Coat dries properly by “curing” the body in an oven. It is then sanded and carefully inspected. The M-Class utilizes water-based and lead-free E-Coat to seal and protect the body.
+      </td>
+    </tr>
+    <tr>
+      <th>PRIMER</th>
+    </tr>
+    <tr>
+      <td>Ensures consistency in the surface of the body prior to being painted.</td>
+    </tr>
+    <tr>
+      <th>COLOR COAT</th>
+    </tr>
+    <tr>
+      <td>Base color of vehicle. Next the color coat is applied, which is the actual paint that you see.</td>
+    </tr>
+    <tr>
+      <th>TOP COAT</th>
+    </tr>
+    <tr>
+      <td>The purpose of the clear coat is to protect the color from damage due to the outside elements and UV damage . Top Coat is a new type of clear coat called Nano Clear Coat. It has a high cross-linking density which will provide a higher gloss and less scratches.
+      </td>
+    </tr>
+    <tr>
+      <th>AUTOMATED STORAGE AND RETRIEVAL SYSTEM (ASRS)</th>
+    </tr>
+    <tr>
+      <td>At this point the bodies are sent to the ASRS where the painted bodies are stored.  The ASRS enables a Just-In-Time automated storage and retrieval of any painted body that our Production Control department orders.  Upon order the painted body automatically travel to the appropriate assembly shop. Typically at the same time they will send a signal to our JIT/in-sequence suppliers to build the parts for that vehicle. The parts will arrive on the line at the same time as the body arrives.
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+</script>
+
+</body>
+</html>
