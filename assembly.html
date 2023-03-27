@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Levi Hirschmann 665 350 674-->
+<head>
+
+  <title>Assembly Line</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/maincss.css">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">Automobile</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="pressshop.html">Press Shop</a></li>
+        <li><a href="bodyshop.html">Body Shop</a></li>
+        <li><a href="paintshop.html">Paint Shop</a></li>
+        <li><a href="assembly.html">Assembly</a></li>
+        <li><a href="testing.html">Testing</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="item">
+  <img src="img/assembly.jpg" alt="assembly line" style="max-width: 100%">
+  <div class="carousel-caption">
+    <h3>The Assembly</h3>
+    <p>Heart of the Manufactoring Process</p>
+  </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>The Assembly</h3>
+  <p>The assembly line is the heart of the manufactoring process.</p>
+  <p>It’s on this assembly line where they attach various parts to the painted body shell, including the engine, chassis, and tyres.</p>
+  <p>At this part of the production process, the so called magical "marriage" takes place. The step when the drivetrain is united with the bodywork.</p>
+  <p>And the last part of the assembly process involves mounting certain mechanical elements from the driving position and mirrors to the interior trim of the vehicle.</p>
+  <br>
+  <img src="img/marriage1.jpg" alt="car marriage" style="max-width: 100%">
+  <br>
+  <p>Here we can see the marriage of an electric car, where the drivetrain at the bottom, is attached to the bodywork on top.</p>
+  <br>
+  <img src="img/marriage2.jpg" alt="car marriage part 2" style="max-width: 100%">
+  <p>And here the result after the drivetrain has been attached to the bodywork.</p>
+  <br>
+  <p>All Team Members in Assembly wear ‘Team Wear” which includes special protective belts and protective watch coverings to prevent them from scratching the body. In addition, Team Members wear special work shoes that do not allow Electrostatic Discharge. The prevention of electrostatic discharge is essential in preventing damage to computer components during assembly. The Logistics Center, located nearby, receives the majority of our assembly parts where they are sorted and put into sequence for efficient delivery to the assembly line using either the order card system or the push button. Our suppliers utilize mostly reusable plastic crates for shipment and supply, instead of non-recyclable wood or cardboard containers, to support our commitment to help the environment.
+  </p>
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+</script>
+
+</body>
+</html>

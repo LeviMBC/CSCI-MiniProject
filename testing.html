@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Levi Hirschmann 665 350 674-->
+<head>
+
+  <title>Final Inspection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/maincss.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 25px 0;
+      min-width: 400px;
+    }
+    th {
+      background-color: #777;
+      color: #ffffff;
+      text-align: center;
+    }
+    td{
+      padding: 12px 15px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">Automobile</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="pressshop.html">Press Shop</a></li>
+        <li><a href="bodyshop.html">Body Shop</a></li>
+        <li><a href="paintshop.html">Paint Shop</a></li>
+        <li><a href="assembly.html">Assembly</a></li>
+        <li><a href="testing.html">Testing</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="item">
+  <img src="img/testing.jpg" alt="inspection" style="max-width: 100%">
+  <div class="carousel-caption">
+    <h3>Final Inspection / Testing</h3>
+    <p>Finishing Touches for a seamless delivery</p>
+  </div>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>The Final Inspection / Testing</h3>
+  <p>When all of the stages of production have been completed, the fully-assembled car is then thoroughly inspected to ensure there are no defects before sending it to car dealerships. This process also involves checking for any imperfections or inconsistencies with the exterior or interior. Some of the checks include the following:
+  </p>
+  <table>
+    <tr>
+      <td>
+        <ul>
+          <li>the engine is started and stopped several times</li>
+          <li>steering alignment is adjusted</li>
+          <li>headlights are checked for brightness and reach</li>
+          <li>brakes are tested for safety</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>heavy water pressure tests to find leaks</li>
+          <li>the car’s programming</li>
+          <li>electrical units will be checked to ensure safety and accessibility</li>
+          <li>checking for any exterior or interior imperfections</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <p>As well as before presentation multiple crash tests, to ensure the maximum saftey of all passengers.</p>
+  <p> And lastly some additional off-line tests will be performed. <br> Such as test tracks, where the vehicle is driven onto a special test track to check for “rattles,vibrations and wind noise.<br>
+  Wheel alignment, where the suspension and wheel alignment will be checked. <br> Rolls test, a computer test of all the electronic functions under various simulated driving situations (e.g, temp, speed,etc.). <br>
+  And a Quality shower, a water shower test to ensure that the vehicle is sealed properly.</p>
+  <br>
+  <p>Now the car is ready for delivery.</p>
+  <img src="img/cartrain.png" alt="cartrain" style="max-width: 100%">
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+</script>
+
+</body>
+</html>
